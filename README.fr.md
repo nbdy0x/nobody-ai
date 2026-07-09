@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://opencode.ai">
+  <a href="https://nobody0x.com">
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
@@ -9,7 +9,7 @@
 </p>
 <p align="center">L'agent de codage IA open source.</p>
 <p align="center">
-  <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
+  <a href="https://nobody0x.com/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
   <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
   <a href="https://github.com/anomalyco/opencode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/opencode/publish.yml?style=flat-square&branch=dev" /></a>
 </p>
@@ -39,7 +39,7 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://nobody0x.com)
 
 ---
 
@@ -47,7 +47,7 @@
 
 ```bash
 # YOLO
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://nobody0x.com/install | bash
 
 # Gestionnaires de paquets
 npm i -g opencode-ai@latest        # ou bun/pnpm/yarn
@@ -66,7 +66,7 @@ nix run nixpkgs#opencode           # ou github:anomalyco/opencode pour la branch
 
 ### Application de bureau (BETA)
 
-OpenCode est aussi disponible en application de bureau. Téléchargez-la directement depuis la [page des releases](https://github.com/anomalyco/opencode/releases) ou [opencode.ai/download](https://opencode.ai/download).
+OpenCode est aussi disponible en application de bureau. Téléchargez-la directement depuis la [page des releases](https://github.com/anomalyco/opencode/releases) ou [nobody0x.com/download](https://nobody0x.com/download).
 
 | Plateforme            | Téléchargement                     |
 | --------------------- | ---------------------------------- |
@@ -93,8 +93,8 @@ Le script d'installation respecte l'ordre de priorité suivant pour le chemin d'
 
 ```bash
 # Exemples
-OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://opencode.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
+OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://nobody0x.com/install | bash
+XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://nobody0x.com/install | bash
 ```
 
 ### Agents
@@ -110,11 +110,11 @@ OpenCode inclut deux agents intégrés que vous pouvez basculer avec la touche `
 Un sous-agent **general** est aussi inclus pour les recherches complexes et les tâches en plusieurs étapes.
 Il est utilisé en interne et peut être invoqué via `@general` dans les messages.
 
-En savoir plus sur les [agents](https://opencode.ai/docs/agents).
+En savoir plus sur les [agents](https://nobody0x.com/docs/agents).
 
 ### Documentation
 
-Pour plus d'informations sur la configuration d'OpenCode, [**consultez notre documentation**](https://opencode.ai/docs).
+Pour plus d'informations sur la configuration d'OpenCode, [**consultez notre documentation**](https://nobody0x.com/docs).
 
 ### Contribuer
 

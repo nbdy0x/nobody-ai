@@ -59,7 +59,7 @@ function model(input: {
     providerID: "opencode",
     api: {
       id: "opencode",
-      url: "https://opencode.ai",
+      url: "https://nobody0x.com",
       npm: "@ai-sdk/openai-compatible",
     },
     name: input.name,

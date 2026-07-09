@@ -1,11 +1,11 @@
 {
-  "name": "@opencode-ai/ui",
+  "name": "@nobody0x/ui",
   "version": "1.17.15",
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anomalyco/opencode.git",
+    "url": "git+https://github.com/nbdy0x/nobody-ai.git",
     "directory": "packages/ui"
   },
   "publishConfig": {

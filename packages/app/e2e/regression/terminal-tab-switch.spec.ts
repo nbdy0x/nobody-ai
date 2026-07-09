@@ -74,13 +74,13 @@ async function setup(page: Page) {
     provider: {
       all: [
         {
-          id: "opencode",
-          name: "OpenCode",
+          id: "Nobody AI",
+          name: "Nobody AI",
           models: { test: { id: "test", name: "Test", limit: { context: 200_000 } } },
         },
       ],
-      connected: ["opencode"],
-      default: { providerID: "opencode", modelID: "test" },
+      connected: ["Nobody AI"],
+      default: { providerID: "Nobody AI", modelID: "test" },
     },
     sessions: [session(sessionA, titleA, 1700000000000), session(sessionB, titleB, 1700000001000)],
     pageMessages: () => ({ items: [] }),

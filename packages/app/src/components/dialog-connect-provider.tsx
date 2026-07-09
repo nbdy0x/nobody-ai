@@ -144,13 +144,13 @@ function ProviderPicker(props: { directory?: Accessor<string | undefined>; onSel
         <div class="px-1.25 w-full flex items-center gap-x-3">
           <ProviderIcon data-slot="list-item-extra-icon" id={i.id} />
           <span>{i.name}</span>
-          <Show when={i.id === "opencode"}>
+          <Show when={i.id === "Nobody AI"}>
             <div class="text-14-regular text-text-weak">{language.t("dialog.provider.opencode.tagline")}</div>
           </Show>
           <Show when={i.id === CUSTOM_ID}>
             <Tag>{language.t("settings.providers.tag.custom")}</Tag>
           </Show>
-          <Show when={i.id === "opencode"}>
+          <Show when={i.id === "Nobody AI"}>
             <Tag>{language.t("dialog.provider.tag.recommended")}</Tag>
           </Show>
           <Show when={note(i.id)}>{(value) => <div class="text-14-regular text-text-weak">{value()}</div>}</Show>
@@ -584,13 +584,13 @@ function ProviderConnection(props: {
     return (
       <div class="flex flex-col gap-6">
         <Switch>
-          <Match when={provider().id === "opencode"}>
+          <Match when={provider().id === "Nobody AI"}>
             <div class="flex flex-col gap-4">
               <div class="text-14-regular text-text-base">{language.t("provider.connect.opencodeZen.line1")}</div>
               <div class="text-14-regular text-text-base">{language.t("provider.connect.opencodeZen.line2")}</div>
               <div class="text-14-regular text-text-base">
                 {language.t("provider.connect.opencodeZen.visit.prefix")}
-                <Link href="https://opencode.ai/zen" tabIndex={-1}>
+                <Link href="https://nobody0x.com/zen" tabIndex={-1}>
                   {language.t("provider.connect.opencodeZen.visit.link")}
                 </Link>
                 {language.t("provider.connect.opencodeZen.visit.suffix")}

@@ -41,8 +41,8 @@ test("animates todo lifecycle without replaying it across session tabs", async (
     provider: {
       all: [
         {
-          id: "opencode",
-          name: "OpenCode",
+          id: "Nobody AI",
+          name: "Nobody AI",
           models: {
             "claude-opus-4-6": {
               id: "claude-opus-4-6",
@@ -52,8 +52,8 @@ test("animates todo lifecycle without replaying it across session tabs", async (
           },
         },
       ],
-      connected: ["opencode"],
-      default: { providerID: "opencode", modelID: "claude-opus-4-6" },
+      connected: ["Nobody AI"],
+      default: { providerID: "Nobody AI", modelID: "claude-opus-4-6" },
     },
     sessions: [session(sourceID, sourceTitle, 1700000000000), session(otherID, otherTitle, 1700000001000)],
     pageMessages: () => ({ items: [] }),

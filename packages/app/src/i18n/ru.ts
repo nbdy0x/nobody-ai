@@ -141,7 +141,7 @@ export const dict = {
   "provider.connect.opencodeZen.line2":
     "С одним API ключом вы получите доступ к таким моделям как Claude, GPT, Gemini, GLM и другим.",
   "provider.connect.opencodeZen.visit.prefix": "Посетите ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
+  "provider.connect.opencodeZen.visit.link": "nobody0x.com/zen",
   "provider.connect.opencodeZen.visit.suffix": " чтобы получить ваш API ключ.",
   "provider.connect.oauth.code.visit.prefix": "Посетите ",
   "provider.connect.oauth.code.visit.link": "эту ссылку",
@@ -360,7 +360,7 @@ export const dict = {
   "wsl.server.retryStart": "Повторить запуск",
   "wsl.server.updating": "Обновление...",
   "wsl.onboarding.step.distro": "Выбрать дистрибутив",
-  "wsl.onboarding.step.opencode": "OpenCode",
+  "wsl.onboarding.step.opencode": "Nobody AI",
   "wsl.onboarding.checkingRuntime": "Проверка WSL...",
   "wsl.onboarding.restartRequired": "Чтобы завершить установку WSL, перезапустите Windows.",
   "wsl.onboarding.ready": "WSL готова к работе.",

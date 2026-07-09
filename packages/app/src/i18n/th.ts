@@ -141,7 +141,7 @@ export const dict = {
   "provider.connect.opencodeZen.line2":
     "ด้วยคีย์ API เดียวคุณจะได้รับการเข้าถึงโมเดล เช่น Claude, GPT, Gemini, GLM และอื่น ๆ",
   "provider.connect.opencodeZen.visit.prefix": "เยี่ยมชม ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
+  "provider.connect.opencodeZen.visit.link": "nobody0x.com/zen",
   "provider.connect.opencodeZen.visit.suffix": " เพื่อรวบรวมคีย์ API ของคุณ",
   "provider.connect.oauth.code.visit.prefix": "เยี่ยมชม ",
   "provider.connect.oauth.code.visit.link": "ลิงก์นี้",
@@ -360,7 +360,7 @@ export const dict = {
   "wsl.server.retryStart": "ลองเริ่มอีกครั้ง",
   "wsl.server.updating": "กำลังอัปเดต...",
   "wsl.onboarding.step.distro": "เลือกดิสโทร",
-  "wsl.onboarding.step.opencode": "OpenCode",
+  "wsl.onboarding.step.opencode": "Nobody AI",
   "wsl.onboarding.checkingRuntime": "กำลังตรวจสอบ WSL...",
   "wsl.onboarding.restartRequired": "ต้องรีสตาร์ท Windows เพื่อให้การติดตั้ง WSL เสร็จสมบูรณ์.",
   "wsl.onboarding.ready": "WSL พร้อมใช้งานแล้ว.",
