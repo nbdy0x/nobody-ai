@@ -176,7 +176,7 @@ export function args(file: string, command: string, cwd: string) {
         cd -- "$1"
         eval ${JSON.stringify(command)}
       `,
-      "opencode",
+      "nobody-ai",
       cwd,
     ]
   }
@@ -190,7 +190,7 @@ export function args(file: string, command: string, cwd: string) {
         cd -- "$1"
         eval ${JSON.stringify(command)}
       `,
-      "opencode",
+      "nobody-ai",
       cwd,
     ]
   }
@@ -224,3 +224,4 @@ export async function list(): Promise<Item[]> {
   const shells = process.platform === "win32" ? win() : await unix()
   return shells.filter((s) => resolve(s)).map(info)
 }
+

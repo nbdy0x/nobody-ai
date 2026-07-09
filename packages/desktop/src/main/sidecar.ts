@@ -59,7 +59,7 @@ async function start(command: StartCommand) {
     listener = await Server.listen({
       port: command.port,
       hostname: command.hostname,
-      username: "opencode",
+      username: "nobody-ai",
       password: command.password,
       cors: ["oc://renderer"],
     })
@@ -82,7 +82,7 @@ async function stop() {
 
 function prepareSidecarEnv(password: string, userDataPath: string) {
   Object.assign(process.env, {
-    OPENCODE_SERVER_USERNAME: "opencode",
+    OPENCODE_SERVER_USERNAME: "nobody-ai",
     OPENCODE_SERVER_PASSWORD: password,
     XDG_STATE_HOME: process.env.XDG_STATE_HOME ?? userDataPath,
   })
@@ -155,3 +155,4 @@ function getParentPort() {
   if (!port) throw new Error("Sidecar parent port unavailable")
   return port
 }
+

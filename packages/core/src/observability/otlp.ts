@@ -35,7 +35,7 @@ function resourceAttributes() {
 
 export function resource(): { serviceName: string; serviceVersion: string; attributes: Record<string, string> } {
   return {
-    serviceName: "opencode",
+    serviceName: "nobody-ai",
     serviceVersion: InstallationVersion,
     attributes: {
       ...resourceAttributes(),
@@ -77,3 +77,4 @@ export async function tracingLayer() {
 }
 
 export * as Otlp from "./otlp"
+

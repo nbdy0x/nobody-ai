@@ -71,7 +71,7 @@ if (!arch) {
   arch = os.arch()
 }
 const base = "opencode-" + platform + "-" + arch
-const binary = platform === "windows" ? "opencode.exe" : "opencode"
+const binary = platform === "windows" ? "opencode.exe" : "nobody-ai"
 
 function supportsAvx2() {
   if (arch !== "x64") return false
@@ -197,3 +197,4 @@ if (!resolved) {
 }
 
 run(resolved)
+

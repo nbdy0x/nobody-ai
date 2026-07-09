@@ -16,7 +16,7 @@
     "dev:temporary": "bun run --conditions=browser ./src/temporary.ts"
   },
   "bin": {
-    "nobody-ai": "./bin/opencode"
+    "nobody-ai": ".\/bin\/nobody-ai"
   },
   "exports": {
     "./*": "./src/*.ts"
@@ -156,3 +156,4 @@
     "drizzle-orm": "catalog:"
   }
 }
+

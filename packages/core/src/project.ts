@@ -63,7 +63,7 @@ const layer = Layer.effect(
     })
 
     const cached = Effect.fnUntraced(function* (dir: string) {
-      return yield* fs.readFileString(path.join(dir, "opencode")).pipe(
+      return yield* fs.readFileString(path.join(dir, "nobody-ai")).pipe(
         Effect.map((value) => value.trim()),
         Effect.map((value) => (value ? ID.make(value) : undefined)),
         Effect.catch(() => Effect.succeed(undefined)),
@@ -122,7 +122,7 @@ const layer = Layer.effect(
     })
 
     const commit = Effect.fn("Project.commit")(function* (input: { store: AbsolutePath; id: ID }) {
-      yield* fs.writeFileString(path.join(input.store, "opencode"), input.id).pipe(Effect.ignore)
+      yield* fs.writeFileString(path.join(input.store, "nobody-ai"), input.id).pipe(Effect.ignore)
     })
 
     return Service.of({ directories, resolve, commit })
@@ -134,3 +134,4 @@ export const node = makeGlobalNode({
   layer: layer,
   deps: [FSUtil.node, Git.node, ProjectDirectories.node],
 })
+

@@ -131,3 +131,4 @@ Write-Host "📚 Docs: https://nobody0x.com/docs" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "⚠️  Restart your terminal for PATH changes to take effect" -ForegroundColor Yellow
 Write-Host ""
+

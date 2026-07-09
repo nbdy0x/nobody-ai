@@ -46,7 +46,7 @@ import { cleanupStoreFiles } from "./store-cleanup"
 const APP_NAMES: Record<string, string> = {
   dev: "OpenCode Dev",
   beta: "OpenCode Beta",
-  prod: "OpenCode",
+  prod: "nobody-ai",
 }
 const APP_IDS: Record<string, string> = {
   dev: "ai.opencode.desktop.dev",
@@ -259,7 +259,7 @@ const main = Effect.gen(function* () {
       }),
     ),
   )
-  app.setAsDefaultProtocolClient("opencode")
+  app.setAsDefaultProtocolClient("nobody-ai")
   registerRendererProtocol()
   setDockIcon()
   const updater = setupAutoUpdater(stopSidecars)
@@ -349,7 +349,7 @@ const main = Effect.gen(function* () {
     server = listener
     yield* Deferred.succeed(serverReady, {
       url,
-      username: "opencode",
+      username: "nobody-ai",
       password,
     })
 
@@ -389,3 +389,4 @@ const main = Effect.gen(function* () {
 })
 
 Effect.runFork(main)
+

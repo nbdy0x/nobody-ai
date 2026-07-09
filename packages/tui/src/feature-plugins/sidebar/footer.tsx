@@ -11,7 +11,7 @@ function View(props: { api: TuiPluginApi; sessionID: string }) {
   const theme = () => props.api.theme.current
   const has = createMemo(() =>
     props.api.state.provider.some(
-      (item) => item.id !== "opencode" || Object.values(item.models).some((model) => model.cost?.input !== 0),
+      (item) => item.id !== "nobody-ai" || Object.values(item.models).some((model) => model.cost?.input !== 0),
     ),
   )
   const done = createMemo(() => props.api.kv.get("dismissed_getting_started", false))
@@ -96,3 +96,4 @@ const plugin: BuiltinTuiPlugin = {
 }
 
 export default plugin
+

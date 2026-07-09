@@ -36,7 +36,7 @@ const Org = Schema.Struct({ id: Schema.String, name: Schema.String })
 
 function oauth(http: HttpClient.HttpClient) {
   return {
-    integrationID: Integration.ID.make("opencode"),
+    integrationID: Integration.ID.make("nobody-ai"),
     method: {
       id: methodID,
       type: "oauth",
@@ -75,7 +75,7 @@ function oauth(http: HttpClient.HttpClient) {
 }
 
 export const OpencodePlugin = define<HttpClient.HttpClient | EventV2.Service | Scope.Scope>({
-  id: "opencode",
+  id: "nobody-ai",
   effect: Effect.fn(function* (ctx) {
     const events = yield* EventV2.Service
     const http = yield* HttpClient.HttpClient
@@ -84,7 +84,7 @@ export const OpencodePlugin = define<HttpClient.HttpClient | EventV2.Service | S
     let providers: typeof ConfigV1.Info.Type.provider | undefined
 
     const load = Effect.fn("OpencodePlugin.load")(function* () {
-      const connection = yield* ctx.integration.connection.active("opencode")
+      const connection = yield* ctx.integration.connection.active("nobody-ai")
       const credential = connection
         ? yield* ctx.integration.connection.resolve(connection).pipe(Effect.catch(() => Effect.succeed(undefined)))
         : undefined
@@ -99,18 +99,18 @@ export const OpencodePlugin = define<HttpClient.HttpClient | EventV2.Service | S
     })
 
     yield* ctx.integration.transform((draft) => {
-      draft.update("opencode", (integration) => {
-        integration.name = "OpenCode"
+      draft.update("nobody-ai", (integration) => {
+        integration.name = "nobody-ai"
       })
       draft.method.update(oauth(http))
-      draft.method.update({ integrationID: "opencode", method: { type: "key", label: "API key (service account)" } })
+      draft.method.update({ integrationid: "nobody-ai", method: { type: "key", label: "API key (service account)" } })
     })
 
-    connected = (yield* ctx.integration.connection.active("opencode")) !== undefined
+    connected = (yield* ctx.integration.connection.active("nobody-ai")) !== undefined
     yield* ctx.catalog.transform((catalog) => {
       for (const [providerID, item] of Object.entries(providers ?? {})) {
         catalog.provider.update(providerID, (provider) => {
-          provider.integrationID = Integration.ID.make("opencode")
+          provider.integrationID = Integration.ID.make("nobody-ai")
           if (item.name !== undefined) provider.name = item.name
           provider.api = item.npm
             ? { type: "aisdk", package: item.npm, url: item.api }
@@ -179,7 +179,7 @@ export const OpencodePlugin = define<HttpClient.HttpClient | EventV2.Service | S
 
     const refresh = () => loading.withPermit(load().pipe(Effect.andThen(ctx.catalog.reload())))
     yield* events.subscribe(Integration.Event.ConnectionUpdated).pipe(
-      Stream.filter((event) => event.data.integrationID === Integration.ID.make("opencode")),
+      Stream.filter((event) => event.data.integrationID === Integration.ID.make("nobody-ai")),
       Stream.runForEach(refresh),
       Effect.forkScoped({ startImmediately: true }),
     )
@@ -309,3 +309,4 @@ function post<S extends Schema.Top>(
     Effect.flatMap(HttpClientResponse.schemaBodyJson(schema)),
   )
 }
+

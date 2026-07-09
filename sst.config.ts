@@ -3,7 +3,7 @@
 export default $config({
   app(input) {
     return {
-      name: "opencode",
+      name: "nobody-ai",
       removal: input?.stage === "production" ? "retain" : "remove",
       protect: ["production"].includes(input?.stage),
       home: "cloudflare",
@@ -51,3 +51,4 @@ export default $config({
     }
   },
 })
+
