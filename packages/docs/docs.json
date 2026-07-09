@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "@opencode-ai/docs",
+  "name": "@nobody0x/docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#ff3b30",
+    "light": "#ff3b30",
+    "dark": "#8a0000"
   },
   "favicon": "/favicon-v3.svg",
   "navigation": {
@@ -16,7 +16,7 @@
           {
             "group": "Getting started",
             "pages": ["index", "quickstart", "development"],
-            "openapi": "https://opencode.ai/openapi.json"
+            "openapi": "https://nobody0x.com/openapi.json"
           }
         ]
       }
@@ -45,9 +45,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/nobody0x",
+      "github": "https://github.com/nobody0x"
     }
   }
 }

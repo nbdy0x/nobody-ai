@@ -133,7 +133,7 @@ export const dict = {
   "provider.connect.opencodeZen.line2":
     "Mit einem einzigen API-Schlüssel erhalten Sie Zugriff auf Modelle wie Claude, GPT, Gemini, GLM und mehr.",
   "provider.connect.opencodeZen.visit.prefix": "Besuchen Sie ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
+  "provider.connect.opencodeZen.visit.link": "nobody0x.com/zen",
   "provider.connect.opencodeZen.visit.suffix": ", um Ihren API-Schlüssel zu erhalten.",
   "provider.connect.oauth.code.visit.prefix": "Besuchen Sie ",
   "provider.connect.oauth.code.visit.link": "diesen Link",
@@ -339,7 +339,7 @@ export const dict = {
   "wsl.server.retryStart": "Start erneut versuchen",
   "wsl.server.updating": "Wird aktualisiert...",
   "wsl.onboarding.step.distro": "Distribution auswählen",
-  "wsl.onboarding.step.opencode": "OpenCode",
+  "wsl.onboarding.step.opencode": "Nobody AI",
   "wsl.onboarding.checkingRuntime": "WSL wird geprüft...",
   "wsl.onboarding.restartRequired": "Windows muss neu gestartet werden, um die WSL-Installation abzuschließen.",
   "wsl.onboarding.ready": "WSL ist bereit.",

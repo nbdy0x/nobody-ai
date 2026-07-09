@@ -24,13 +24,13 @@ test("routes typing to the composer unless the open terminal is focused", async 
     provider: {
       all: [
         {
-          id: "opencode",
-          name: "OpenCode",
+          id: "Nobody AI",
+          name: "Nobody AI",
           models: { test: { id: "test", name: "Test", limit: { context: 200_000 } } },
         },
       ],
-      connected: ["opencode"],
-      default: { providerID: "opencode", modelID: "test" },
+      connected: ["Nobody AI"],
+      default: { providerID: "Nobody AI", modelID: "test" },
     },
     sessions: [
       {

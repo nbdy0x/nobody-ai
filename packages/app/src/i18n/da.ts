@@ -141,7 +141,7 @@ export const dict = {
   "provider.connect.opencodeZen.line2":
     "Med en enkelt API-nøgle får du adgang til modeller som Claude, GPT, Gemini, GLM og flere.",
   "provider.connect.opencodeZen.visit.prefix": "Besøg ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
+  "provider.connect.opencodeZen.visit.link": "nobody0x.com/zen",
   "provider.connect.opencodeZen.visit.suffix": " for at hente din API-nøgle.",
   "provider.connect.oauth.code.visit.prefix": "Besøg ",
   "provider.connect.oauth.code.visit.link": "dette link",
@@ -359,7 +359,7 @@ export const dict = {
   "wsl.server.retryStart": "Prøv at starte igen",
   "wsl.server.updating": "Opdaterer...",
   "wsl.onboarding.step.distro": "Vælg distribution",
-  "wsl.onboarding.step.opencode": "OpenCode",
+  "wsl.onboarding.step.opencode": "Nobody AI",
   "wsl.onboarding.checkingRuntime": "Tjekker WSL...",
   "wsl.onboarding.restartRequired": "Windows skal genstartes for at fuldføre installationen af WSL.",
   "wsl.onboarding.ready": "WSL er klar.",

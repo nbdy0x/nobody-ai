@@ -25,7 +25,7 @@ export const sessionID = "ses_timeline_stability"
 export const userID = "msg_1000_timeline_user"
 export const assistantID = "msg_1001_timeline_assistant"
 export const title = "Timeline visual stability"
-export const model = { providerID: "opencode", modelID: "claude-opus-4-6", variant: "max" }
+export const model = { providerID: "Nobody AI", modelID: "claude-opus-4-6", variant: "max" }
 
 type TimelinePayload = Extract<
   GlobalEvent["payload"],
@@ -550,12 +550,12 @@ function provider() {
   return {
     all: [
       {
-        id: "opencode",
-        name: "OpenCode",
+        id: "Nobody AI",
+        name: "Nobody AI",
         models: { "claude-opus-4-6": { id: "claude-opus-4-6", name: "Claude Opus 4.6", limit: { context: 200_000 } } },
       },
     ],
-    connected: ["opencode"],
-    default: { providerID: "opencode", modelID: "claude-opus-4-6" },
+    connected: ["Nobody AI"],
+    default: { providerID: "Nobody AI", modelID: "claude-opus-4-6" },
   }
 }

@@ -132,7 +132,7 @@ export function Header(props: { githubStars: string; links?: readonly HeaderLink
             <strong>{i18n.t("header.github")}</strong>
             <span>[{props.githubStars}]</span>
           </a>
-          <a data-slot="header-button" data-variant="contrast" href="https://opencode.ai/">
+          <a data-slot="header-button" data-variant="contrast" href="https://nobody0x.com/">
             <strong>{i18n.t("header.tryOpenCode")}</strong>
           </a>
           <button
@@ -232,12 +232,12 @@ export function Footer(props: {
     { href: "#geo-breakdown", label: i18n.t("nav.geoBreakdown") },
   ]
   const legal = [
-    { href: "https://opencode.ai/legal/terms-of-service", label: i18n.t("footer.terms") },
-    { href: "https://opencode.ai/legal/privacy-policy", label: i18n.t("footer.privacy") },
+    { href: "https://nobody0x.com/legal/terms-of-service", label: i18n.t("footer.terms") },
+    { href: "https://nobody0x.com/legal/privacy-policy", label: i18n.t("footer.privacy") },
   ]
   const connect = [
-    { href: "mailto:hello@opencode.ai", label: i18n.t("footer.contact") },
-    { href: "https://opencode.ai/discord", label: i18n.t("footer.community") },
+    { href: "mailto:hello@nobody0x.com", label: i18n.t("footer.contact") },
+    { href: "https://nobody0x.com/discord", label: i18n.t("footer.community") },
     { href: "https://x.com/opencode", label: "X" },
     { href: githubLink.href, label: i18n.t("header.github") },
     { href: "https://www.youtube.com/@anomaly-co", label: i18n.t("footer.youtube") },
@@ -251,7 +251,7 @@ export function Footer(props: {
     <footer data-component="footer">
       <Show when={bridge()}>{(link) => <SectionBridge label={link().label} href={link().href} />}</Show>
       <div data-slot="footer-grid">
-        <a data-slot="footer-mark" href="https://opencode.ai" aria-label={i18n.t("footer.homeAria")}>
+        <a data-slot="footer-mark" href="https://nobody0x.com" aria-label={i18n.t("footer.homeAria")}>
           <OpenCodeMark />
         </a>
         <FooterColumn title={i18n.t("footer.modelData")} links={modelStats} localHref={localHref} />

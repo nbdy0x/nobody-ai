@@ -120,8 +120,8 @@ async function mockServer(
     provider: {
       all: [
         {
-          id: "opencode",
-          name: "OpenCode",
+          id: "Nobody AI",
+          name: "Nobody AI",
           models: {
             "claude-opus-4-6": {
               id: "claude-opus-4-6",
@@ -131,8 +131,8 @@ async function mockServer(
           },
         },
       ],
-      connected: ["opencode"],
-      default: { providerID: "opencode", modelID: "claude-opus-4-6" },
+      connected: ["Nobody AI"],
+      default: { providerID: "Nobody AI", modelID: "claude-opus-4-6" },
     },
     sessions: [
       {

@@ -145,7 +145,7 @@ export const dict = {
   "provider.connect.opencodeZen.line2":
     "Tek bir API anahtarıyla Claude, GPT, Gemini, GLM ve daha fazlası gibi modellere erişebilirsiniz.",
   "provider.connect.opencodeZen.visit.prefix": "",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
+  "provider.connect.opencodeZen.visit.link": "nobody0x.com/zen",
   "provider.connect.opencodeZen.visit.suffix": " adresini ziyaret ederek API anahtarınızı alın.",
   "provider.connect.oauth.code.visit.prefix": "Yetkilendirme kodunuzu almak için ",
   "provider.connect.oauth.code.visit.link": "bu bağlantıya",
@@ -365,7 +365,7 @@ export const dict = {
   "wsl.server.retryStart": "Başlatmayı yeniden dene",
   "wsl.server.updating": "Güncelleniyor...",
   "wsl.onboarding.step.distro": "Dağıtım seç",
-  "wsl.onboarding.step.opencode": "OpenCode",
+  "wsl.onboarding.step.opencode": "Nobody AI",
   "wsl.onboarding.checkingRuntime": "WSL kontrol ediliyor...",
   "wsl.onboarding.restartRequired": "WSL kurulumunu tamamlamak için Windows'un yeniden başlatılması gerekiyor.",
   "wsl.onboarding.ready": "WSL hazır.",

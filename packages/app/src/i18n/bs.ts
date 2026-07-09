@@ -141,7 +141,7 @@ export const dict = {
   "provider.connect.opencodeZen.line2":
     "Sa jednim API ključem dobijaš pristup modelima kao što su Claude, GPT, Gemini, GLM i drugi.",
   "provider.connect.opencodeZen.visit.prefix": "Posjeti ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
+  "provider.connect.opencodeZen.visit.link": "nobody0x.com/zen",
   "provider.connect.opencodeZen.visit.suffix": " da preuzmeš svoj API ključ.",
   "provider.connect.oauth.code.visit.prefix": "Posjeti ",
   "provider.connect.oauth.code.visit.link": "ovaj link",
@@ -361,7 +361,7 @@ export const dict = {
   "wsl.server.retryStart": "Ponovi pokretanje",
   "wsl.server.updating": "Ažuriranje...",
   "wsl.onboarding.step.distro": "Odaberi distribuciju",
-  "wsl.onboarding.step.opencode": "OpenCode",
+  "wsl.onboarding.step.opencode": "Nobody AI",
   "wsl.onboarding.checkingRuntime": "Provjera WSL-a...",
   "wsl.onboarding.restartRequired": "Potrebno je ponovo pokrenuti Windows da bi se završila instalacija WSL-a.",
   "wsl.onboarding.ready": "WSL je spreman.",

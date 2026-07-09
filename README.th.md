@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://opencode.ai">
+  <a href="https://nobody0x.com">
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
@@ -9,7 +9,7 @@
 </p>
 <p align="center">เอเจนต์การเขียนโค้ดด้วย AI แบบโอเพนซอร์ส</p>
 <p align="center">
-  <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
+  <a href="https://nobody0x.com/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
   <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
   <a href="https://github.com/anomalyco/opencode/actions/workflows/publish.yml"><img alt="สถานะการสร้าง" src="https://img.shields.io/github/actions/workflow/status/anomalyco/opencode/publish.yml?style=flat-square&branch=dev" /></a>
 </p>
@@ -39,7 +39,7 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://nobody0x.com)
 
 ---
 
@@ -47,7 +47,7 @@
 
 ```bash
 # YOLO
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://nobody0x.com/install | bash
 
 # ตัวจัดการแพ็กเกจ
 npm i -g opencode-ai@latest        # หรือ bun/pnpm/yarn
@@ -66,7 +66,7 @@ nix run nixpkgs#opencode           # หรือ github:anomalyco/opencode ส�
 
 ### แอปพลิเคชันเดสก์ท็อป (เบต้า)
 
-OpenCode มีให้ใช้งานเป็นแอปพลิเคชันเดสก์ท็อป ดาวน์โหลดโดยตรงจาก [หน้ารุ่น](https://github.com/anomalyco/opencode/releases) หรือ [opencode.ai/download](https://opencode.ai/download)
+OpenCode มีให้ใช้งานเป็นแอปพลิเคชันเดสก์ท็อป ดาวน์โหลดโดยตรงจาก [หน้ารุ่น](https://github.com/anomalyco/opencode/releases) หรือ [nobody0x.com/download](https://nobody0x.com/download)
 
 | แพลตฟอร์ม             | ดาวน์โหลด                          |
 | --------------------- | ---------------------------------- |
@@ -93,8 +93,8 @@ scoop bucket add extras; scoop install extras/opencode-desktop
 
 ```bash
 # ตัวอย่าง
-OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://opencode.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
+OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://nobody0x.com/install | bash
+XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://nobody0x.com/install | bash
 ```
 
 ### เอเจนต์
@@ -110,11 +110,11 @@ OpenCode รวมเอเจนต์ในตัวสองตัวที�
 นอกจากนี้ยังมีเอเจนต์ย่อย **general** สำหรับการค้นหาที่ซับซ้อนและงานหลายขั้นตอน
 ใช้ภายในและสามารถเรียกใช้ได้โดยใช้ `@general` ในข้อความ
 
-เรียนรู้เพิ่มเติมเกี่ยวกับ [เอเจนต์](https://opencode.ai/docs/agents)
+เรียนรู้เพิ่มเติมเกี่ยวกับ [เอเจนต์](https://nobody0x.com/docs/agents)
 
 ### เอกสารประกอบ
 
-สำหรับข้อมูลเพิ่มเติมเกี่ยวกับวิธีกำหนดค่า OpenCode [**ไปที่เอกสารของเรา**](https://opencode.ai/docs)
+สำหรับข้อมูลเพิ่มเติมเกี่ยวกับวิธีกำหนดค่า OpenCode [**ไปที่เอกสารของเรา**](https://nobody0x.com/docs)
 
 ### การมีส่วนร่วม
 
