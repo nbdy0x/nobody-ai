@@ -1,4 +1,4 @@
-import type { FileSystemEntry } from "@opencode-ai/sdk/v2/types"
+import type { FileSystemEntry } from "@nobody0x/sdk/v2/types"
 import type { Effect } from "effect"
 
 export interface FileSystem {

@@ -1,4 +1,4 @@
-import type { FilePart } from "@opencode-ai/sdk/v2"
+import type { FilePart } from "@nobody0x/sdk/v2"
 
 export function attached(part: FilePart) {
   return part.url.startsWith("data:")

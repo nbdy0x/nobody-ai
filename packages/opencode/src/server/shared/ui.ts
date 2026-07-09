@@ -1,4 +1,4 @@
-import { FSUtil } from "@opencode-ai/core/fs-util"
+import { FSUtil } from "@nobody0x/core/fs-util"
 import { Effect, Stream } from "effect"
 import { HttpBody, HttpClient, HttpClientRequest, HttpServerRequest, HttpServerResponse } from "effect/unstable/http"
 import { createHash } from "node:crypto"

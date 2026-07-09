@@ -6,7 +6,7 @@ import {
   useServerSDK,
   useServerSync,
   useTabs,
-} from "@opencode-ai/app"
+} from "@nobody0x/app"
 import { onMount, startTransition } from "solid-js"
 
 export function DesktopFirstLaunchOnboarding(props: { initialUrl: string; onLoaded: () => void }) {

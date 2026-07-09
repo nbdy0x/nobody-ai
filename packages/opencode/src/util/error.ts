@@ -1,1 +1,1 @@
-export * from "@opencode-ai/tui/util/error"
+export * from "@nobody0x/tui/util/error"

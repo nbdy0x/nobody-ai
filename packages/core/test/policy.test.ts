@@ -1,9 +1,9 @@
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { AppNodeBuilder } from "@opencode-ai/core/effect/app-node-builder"
-import { Location } from "@opencode-ai/core/location"
-import { Policy } from "@opencode-ai/core/policy"
-import { AbsolutePath } from "@opencode-ai/core/schema"
+import { AppNodeBuilder } from "@nobody0x/core/effect/app-node-builder"
+import { Location } from "@nobody0x/core/location"
+import { Policy } from "@nobody0x/core/policy"
+import { AbsolutePath } from "@nobody0x/core/schema"
 import { location } from "./fixture/location"
 import { testEffect } from "./lib/effect"
 

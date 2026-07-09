@@ -1,8 +1,8 @@
 import { Effect } from "effect"
 import { HttpApiMiddleware } from "effect/unstable/httpapi"
-import { InvalidRequestError } from "@opencode-ai/protocol/errors"
-import { SchemaErrorMiddleware } from "@opencode-ai/protocol/middleware/schema-error"
-export { SchemaErrorMiddleware } from "@opencode-ai/protocol/middleware/schema-error"
+import { InvalidRequestError } from "@nobody0x/protocol/errors"
+import { SchemaErrorMiddleware } from "@nobody0x/protocol/middleware/schema-error"
+export { SchemaErrorMiddleware } from "@nobody0x/protocol/middleware/schema-error"
 
 const REASON_LIMIT = 1024
 

@@ -1,4 +1,4 @@
-import type { Provider } from "@opencode-ai/sdk/v2"
+import type { Provider } from "@nobody0x/sdk/v2"
 
 export function parse(value: string) {
   const [providerID, ...modelID] = value.split("/")
