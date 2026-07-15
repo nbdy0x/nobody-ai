@@ -4,7 +4,14 @@
   "name": "nobody-ai",
   "type": "module",
   "license": "MIT",
-  "private": true,
+  "files": [
+    "src",
+    "bin",
+    "migration",
+    "README.md",
+    "tsconfig.json",
+    "parsers-config.ts"
+  ],
   "scripts": {
     "typecheck": "tsgo --noEmit",
     "test": "bun test --timeout 30000 --only-failures",
@@ -16,7 +23,7 @@
     "dev:temporary": "bun run --conditions=browser ./src/temporary.ts"
   },
   "bin": {
-    "nobody-ai": ".\/bin\/nobody-ai"
+    "nobody-ai": "./bin/nobody-ai"
   },
   "exports": {
     "./*": "./src/*.ts"
@@ -81,9 +88,6 @@
     "@ff-labs/fff-bun": "0.9.4",
     "@gitlab/opencode-gitlab-auth": "1.3.3",
     "@modelcontextprotocol/sdk": "1.29.0",
-    "@octokit/graphql": "9.0.2",
-    "@octokit/rest": "catalog:",
-    "@openauthjs/openauth": "catalog:",
     "@nobody0x/codemode": "workspace:*",
     "@nobody0x/llm": "workspace:*",
     "@nobody0x/plugin": "workspace:*",
@@ -93,6 +97,9 @@
     "@nobody0x/sdk": "workspace:*",
     "@nobody0x/server": "workspace:*",
     "@nobody0x/tui": "workspace:*",
+    "@octokit/graphql": "9.0.2",
+    "@octokit/rest": "catalog:",
+    "@openauthjs/openauth": "catalog:",
     "@openrouter/ai-sdk-provider": "2.9.0",
     "@opentelemetry/api": "1.9.0",
     "@opentelemetry/context-async-hooks": "2.6.1",
@@ -156,4 +163,3 @@
     "drizzle-orm": "catalog:"
   }
 }
-

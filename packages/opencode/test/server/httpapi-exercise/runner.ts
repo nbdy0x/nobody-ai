@@ -153,7 +153,7 @@ function withContext<A, E>(
                 time: { created: Date.now() },
                 agent: "build",
                 model: {
-                  providerID: ProviderV2.ID.opencode,
+                  providerID: ProviderV2.ID.nobody,
                   modelID: ModelV2.ID.make("test"),
                 },
               }
@@ -258,8 +258,8 @@ function fakeLlmConfig(url: string): Partial<ConfigV1.Info> {
 
 const resetState = Effect.promise(async () => {
   const modules = await runtime()
-  Flag.OPENCODE_SERVER_PASSWORD = original.OPENCODE_SERVER_PASSWORD
-  Flag.OPENCODE_SERVER_USERNAME = original.OPENCODE_SERVER_USERNAME
+  Flag.NOBODY_SERVER_PASSWORD = original.NOBODY_SERVER_PASSWORD
+  Flag.NOBODY_SERVER_USERNAME = original.NOBODY_SERVER_USERNAME
   await disposeApps()
   await modules.disposeAllInstances()
   await modules.resetDatabase()

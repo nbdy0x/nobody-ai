@@ -40,7 +40,7 @@ function oauth(http: HttpClient.HttpClient) {
     method: {
       id: methodID,
       type: "oauth",
-      label: "OpenCode Console account",
+      label: "Nobody AI Console account",
     },
     authorize: () =>
       Effect.gen(function* () {
@@ -92,7 +92,7 @@ export const OpencodePlugin = define<HttpClient.HttpClient | EventV2.Service | S
       providers = credential
         ? yield* fetchProviders(http, credential).pipe(
             Effect.catch((cause) =>
-              Effect.logWarning("failed to load OpenCode provider config", { cause }).pipe(Effect.as(undefined)),
+              Effect.logWarning("failed to load Nobody AI provider config", { cause }).pipe(Effect.as(undefined)),
             ),
           )
         : undefined
@@ -103,7 +103,7 @@ export const OpencodePlugin = define<HttpClient.HttpClient | EventV2.Service | S
         integration.name = "nobody-ai"
       })
       draft.method.update(oauth(http))
-      draft.method.update({ integrationid: "nobody-ai", method: { type: "key", label: "API key (service account)" } })
+      draft.method.update({ integrationID: "nobody-ai", method: { type: "key", label: "API key (service account)" } })
     })
 
     connected = (yield* ctx.integration.connection.active("nobody-ai")) !== undefined
@@ -162,9 +162,9 @@ export const OpencodePlugin = define<HttpClient.HttpClient | EventV2.Service | S
         }
       }
 
-      const item = catalog.provider.get(ProviderV2.ID.opencode)
+      const item = catalog.provider.get(ProviderV2.ID.nobody)
       if (!item) return
-      const hasKey = Boolean(process.env.OPENCODE_API_KEY || connected || item.provider.request.body.apiKey)
+      const hasKey = Boolean(process.env.nobody_API_KEY || connected || item.provider.request.body.apiKey)
       catalog.provider.update(item.provider.id, (provider) => {
         if (!hasKey) provider.request.body.apiKey = "public"
       })
